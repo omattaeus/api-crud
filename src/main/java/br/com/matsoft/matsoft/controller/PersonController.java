@@ -26,7 +26,7 @@ public class PersonController {
             @ApiResponse(responseCode = "422", description = "Dados de requisição inválida"),
             @ApiResponse(responseCode = "400", description = "Parametros inválidos"),
             @ApiResponse(responseCode = "500", description = "Erro ao realizar a consulta de pessoas"),})
-    @GetMapping(value = "/person", produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public List<PersonTESTE> findAll(@RequestBody PersonTESTE person) {
         return service.findAll();
     }
