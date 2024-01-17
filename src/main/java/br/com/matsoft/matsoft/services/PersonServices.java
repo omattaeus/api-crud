@@ -16,7 +16,7 @@ public class PersonServices {
 
     private Logger logger = Logger.getLogger(PersonServices.class.getName());
 
-    @Autowired
+    @Autowired(required = false)
     PersonRepository repository;
 
     public List<PersonTESTE> findAll() {
