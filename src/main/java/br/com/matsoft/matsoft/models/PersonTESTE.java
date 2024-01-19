@@ -1,7 +1,8 @@
-package br.com.matsoft.matsoft.model;
+package br.com.matsoft.matsoft.models;
 
 import jakarta.persistence.*;
 
+import java.io.Serial;
 import java.io.Serializable;
 import java.util.Objects;
 
@@ -9,6 +10,7 @@ import java.util.Objects;
 @Table(name = "personTESTE")
 public class PersonTESTE implements Serializable {
 
+    @Serial
     private static final long serialVersionUID = 1L;
 
     @Id

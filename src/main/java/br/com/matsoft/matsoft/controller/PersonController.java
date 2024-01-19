@@ -1,6 +1,6 @@
 package br.com.matsoft.matsoft.controller;
 
-import br.com.matsoft.matsoft.model.PersonTESTE;
+import br.com.matsoft.matsoft.models.PersonTESTE;
 import br.com.matsoft.matsoft.services.PersonServices;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;

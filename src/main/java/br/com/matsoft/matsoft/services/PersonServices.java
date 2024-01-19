@@ -1,7 +1,7 @@
 package br.com.matsoft.matsoft.services;
 
 import br.com.matsoft.matsoft.exceptions.ResourceNotFoundException;
-import br.com.matsoft.matsoft.model.PersonTESTE;
+import br.com.matsoft.matsoft.models.PersonTESTE;
 import br.com.matsoft.matsoft.repositories.PersonRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -11,9 +11,9 @@ import java.util.logging.Logger;
 @Service
 public class PersonServices {
 
-    private Logger logger = Logger.getLogger(PersonServices.class.getName());
+    private final Logger logger = Logger.getLogger(PersonServices.class.getName());
 
-    @Autowired(required = false)
+    @Autowired
     PersonRepository repository;
 
     public List<PersonTESTE> findAll() {
